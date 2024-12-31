@@ -12,7 +12,7 @@ const Header = async () => {
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/">
+        <Link href="/" className="relative">
           <Image
             src={"/logo.png"}
             alt="CashCompass Logo"
@@ -20,6 +20,7 @@ const Header = async () => {
             height={60}
             className="h-12 w-auto object-contain"
           />
+          <sup className="bg-gradient-to-br bg-clip-text text-transparent from-orange-500 via-pink-500 to-purple-500 animate-gradient absolute right-0 text-sm font-semibold">Beta</sup>
         </Link>
 
         {/* Navigation Links - Different for signed in/out users */}
